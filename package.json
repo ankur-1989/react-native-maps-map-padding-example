@@ -4,11 +4,13 @@
 	"private": true,
 	"scripts": {
 		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"postinstall": "rm node_modules/react-native-maps/.babelrc",
 		"test": "jest"
 	},
 	"dependencies": {
 		"react": "16.0.0-beta.5",
-		"react-native": "0.49.5"
+		"react-native": "0.49.5",
+		"react-native-maps": "https://github.com/peterjuras/react-native-maps.git#feature/map-padding"
 	},
 	"devDependencies": {
 		"babel-jest": "21.2.0",
